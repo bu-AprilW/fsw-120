@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+.boxcontainer {
+  text-align: center;
+}
+
+.info-boxes {
+  display: inline-block;
+  height: 150px;
+  width: 30%;
+  border: solid 2px black;
+  margin: 2px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .info-boxes {
+    display: inline-block;
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  info-boxes {
+    display: inline-block;
+    width: 90%
+  }
+}
