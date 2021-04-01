@@ -1,0 +1,32 @@
+h1 {
+  color: #800080;
+  background-color: #D3D3D3;
+  font-size: 50px;
+  font-family: "MV Boli", Times, serif;
+  text-align: center;
+  border: 5px ridge #800080;
+  width: 30%;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+body {
+  padding: 20px;
+  background-color: #808080;
+}
+
+button:hover, :active {
+  background-color: #D3D3D3;
+  color: #800080;
+  border: 2px solid #800080;
+}
+
+button {
+  align-items: center;
+  font-size: 20px;
+  margin-left: 40%;
+  margin-top: 20px;
+  background-color: #800080;
+  color: #D3D3D3;
+  border: 2px solid #D3D3D3;
+}
