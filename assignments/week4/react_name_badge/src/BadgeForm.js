@@ -46,6 +46,7 @@ class BadgeForm extends Component {
             <div>
                 <form>
                     <h1>Badge Card</h1>
+                    <br/>
                 <input
                     placeholder="First Name" 
                     type="text" 
@@ -89,13 +90,14 @@ class BadgeForm extends Component {
                     value={this.state.favoriteFood}
                     onChange={this.handleChange}
                     required={true}/>
-                <input
-                    placeholder="Text Area"
+
+                <input id="textArea"
+                    placeholder="Tell us about yourself..."
                     type="text"
                     name="textArea"
                     value={this.state.textArea}
                     onChange={this.handleChange}
-                    required={true}/>
+                    required={true}/><br/>
                 <button onClick={this.handleSubmit}>Click Me</button>
                 </form>
                 {/*<h1>{this.state.firstName</h1>*/}
