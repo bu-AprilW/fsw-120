@@ -1,20 +1,20 @@
 import React from 'react';
-import './App.css';
-import { Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import ProfileScreen from './components//ProfileScreen/ProfileScreen';
-import TweetItem from './components/TweetItem/TweetItem';
-import LoginScreen from './components/LoginScreen/LoginScreen';
+import {Switch, Route} from "react-router-dom"
+import Tweeter from "./Components/Tweeter"
+import Support from "./Components/Support"
+import Nav from "./Components/Nav"
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Navbar />
-
+    <div className="App">
+      <Nav />
       <Switch>
-        <Route exact path='/' component={ProfileScreen} />
-        <Route path='/login' component={LoginScreen} />
-        <Route path='/tweets' component={TweetItem}/>
+        <Route exact path= "/">
+          <Tweeter />
+        </Route>
+        <Route path= "/support">
+          <Support />
+        </Route>
       </Switch>
     </div>
   );
